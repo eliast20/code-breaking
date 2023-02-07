@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Mastermind Code Breaker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+  <script src="script.js"></script>
+  
+</head>
+<body>
+  <header>
+    <h1>Mastermind Code Breaker</h1>
+    <button id="restart">Restart/Quit</button>
+  </header>
+  <div class="side-bar">
+     <div class="nav">answer key:</div>
+      <div class="color blue"></div>
+      <div class="color green"></div>
+      <div class="color red"></div>
+      <div class="color yellow"></div>
+      <div class="color orange"></div>
+  </div>
+  <div id="board">
+    <div class="row1">
+      <div class="peg" id="peg1"></div>
+      <div class="peg" id="peg2"></div>
+      <div class="peg" id="peg3"></div>
+      <div class="peg" id="peg4"></div>
+      <div class="peg" id="peg17"></div>
+      <div class="peg" id="peg18"></div>
+      <div class="key" id="key1"></div>
+    </div>
+    <div class="row2">
+      <div class="peg" id="peg5"></div>
+      <div class="peg" id="peg6"></div>
+      <div class="peg" id="peg7"></div>
+      <div class="peg" id="peg8"></div>
+      <div class="peg" id="peg19"></div>
+      <div class="peg" id="peg20"></div>
+      <div class="key" id="key2"></div>
+    </div>
+    <div class="row3">
+      <div class="peg" id="peg9"></div>
+      <div class="peg" id="peg10"></div>
+      <div class="peg" id="peg11"></div>
+      <div class="peg" id="peg12"></div>
+      <div class="peg" id="peg21"></div>
+      <div class="peg" id="peg22"></div>
+      <div class="key" id="key3"></div>
+    </div>
+    <div class="row4">
+      <div class="peg" id="peg13"></div>
+      <div class="peg" id="peg14"></div>
+      <div class="peg" id="peg15"></div>
+      <div class="peg" id="peg16"></div>
+      <div class="peg" id="peg23"></div>
+      <div class="peg" id="peg24"></div>
+      <div class="key" id="key4"></div>
+    </div>
+  </div>
+ 
+  <main>
+    <div id="code" class="row"></div>
+   
+    <div id="choices">
+      <div class="color-blue"></div>
+      <div class="color-green"></div>
+      <div class="color-red"></div>
+      <div class="color-yellow"></div>
+      <div class="color-orange"></div>
+      <div class="start">Enter</div>
+    </div>
+  </main>
+  <script defer src="app.js"></script>
+</body>
+</html>
